@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="input-container">
+            <div class="button"><button class ='button_plus button_minus'id='plus-minus-btn'></button></div>
+            <div class="input description"> <input type="text" id='description-input-id' placeholder="Description"></div>
+            <div class="input value"> <input type="number" id='value-input-id' placeholder="Value"></div>
+            <div class="button add"> <button id="add-button-id"></button> </div>
+            
+        </div>
+        <div class="save-container">
+            <div class="budget-text">Your total budget is : <span id="budget-value"></span></div>
+            <article class='data-balance'>
+            <section id='incomes-section' class='hide'>
+                <h3 class='text text_incomes'>Incomes</h3>
+                <ul id='incomes-list'>
+                </ul>
+            </section>
+            <section id='outcomes-section' class='hide'>
+                <h3 class='text text_outcomes'>Expenses</h3>
+                <ul id='outcomes-list'></ul>
+            </section>
+        </article>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
