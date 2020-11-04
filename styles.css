@@ -15,7 +15,7 @@ body {
 }
 .input-container {
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width:40%;
     height: 100%;
@@ -55,18 +55,14 @@ li {
     border-radius:3px;
     background-color: #FFC493;
     margin-top:5px;
+    padding-left:10px;
 }
 li > * {
     margin-left:40px;
 }
- .remove-button {
+ .delete {
     background-image: url(./remove.png);
-}
- .edit-button {
-    background-image: url(./edit.png);
-}
-.item-button {
-  height: 1.6rem;
+    height: 1.6rem;
   width: 1.6rem;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -75,6 +71,12 @@ li > * {
   opacity: 0;
   transform: translateX(2rem);
   transition: opacity 0.1s ease-in, transform 0.1s ease-in;
+
+}
+ .edit-button {
+    background-image: url(./edit.png);
+}
+  
 }
 .icons {
     text-align:center;
@@ -82,13 +84,13 @@ li > * {
     display:flex;
     right:0;
 }
-li:hover .item-button {
+li:hover .delete {
     opacity: 1;
     transform: translateX(0);
   }
-.hide {
+/* .hide {
     visibility: hidden;
-  }
+  } */
   #add-button-id {
     background-image: url(./confirm.png);
     height: 2rem;
